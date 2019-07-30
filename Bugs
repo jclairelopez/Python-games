@@ -1,2 +1,17 @@
-Homebrew didn't want to install on my machine. Gave me an error that the environment is out of date and I will run into errors and 
+1) Homebrew didn't want to install on my machine. Gave me an error that the environment is out of date and I will run into errors and 
 have to trouble shoot on my own.
+
+2) Attempting to update my OS from Yosemite 10.10 to El Capitan. Used the terminal to check to find out whether the Darwin kernel 
+at the core of OS X is currently running in a 64-bit processor space with this code:
+
+Uname -a
+
+Returned a long line of text displaying the name of the current operating system. Text included the item x86_64.
+(If x86_64 is not present, then you won’t be able to run the new version of OS X)
+
+Checked to see if my EFI firmware is also a 64-bit version with this code:
+ioreg -l -p IODeviceTree -l |grep firmware-abi
+
+Returned type of EFI firmware my Mac is using. Text includes the phrase EFI64
+(If it says EFI32, then you won’t be able to upgrade.)
+
