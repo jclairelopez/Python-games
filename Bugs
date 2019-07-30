@@ -15,3 +15,6 @@ ioreg -l -p IODeviceTree -l |grep firmware-abi
 Returned type of EFI firmware my Mac is using. Text includes the phrase EFI64
 (If it says EFI32, then you won’t be able to upgrade.)
 
+3) Attempting a clean install of El Capitan. 
+Requires back up of my files. 
+Exploring Time Machine because I've only been manually saving items in Google drive.
