@@ -1,7 +1,7 @@
 1) Homebrew didn't want to install on my machine. Gave me an error that the environment is out of date and I will run into errors and 
 have to trouble shoot on my own.
 
-2) Attempting to update my OS from Yosemite 10.10 to El Capitan. Used the terminal to check to find out whether the Darwin kernel 
+2) Attempting to update my OS from Yosemite 10.10 to El Capitan. Used the terminal to find out whether the Darwin kernel 
 at the core of OS X is currently running in a 64-bit processor space with this code:
 
 Uname -a
